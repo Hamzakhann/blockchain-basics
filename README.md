@@ -30,6 +30,16 @@ Range: Represents non-negative integers (whole numbers) starting from 0.
 Example: uint256 can represent values from 0 to 2^256 - 1.
 Usage: Often used when dealing with quantities, counts, or any situation where negative values are not applicable.
 
+uint8 ----------> 0 - 2**8 - 1
+uint16 ----------> 0 - 2**16 - 1
+uint256 ----------> 0 - 2**256 - 1
+
+**Min and Max**
+```
+int public minInt = type(int).min;
+int public maxInt = type(int).max;
+```
+
  **int (Signed Integer):**
 Range: Represents both positive and negative integers.
 Example: int256 can represent values from -2^255 to 2^255 - 1.
